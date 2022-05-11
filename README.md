@@ -54,7 +54,7 @@ $ addphoto [filename path]
 Your photo size should strike a balance between being large enough to read and small enough not to throw an error. GPG will display a warning if the photo you attempt to add is larger than 6144 bytes. The source code of GPG actually suggests keeping the image close to 240x288, and many other PGP programs suggest 120x144 as an ideal image size.
 Another important command to consider for the GPG interactive menu is the signing command. You will hopefully remember from lectures that unlike the World Wide Web, which uses certificate authorities to sign certificates to credible HTTPS servers/websites, the PGP community relies on a web of trust protocol to validate its members. If for example, Alice wants to know if she can trust Charlie, she may look at his public key and see if her friend Bob has signed Charlie’s key. Seeing Bob’s signature on Charlie’s key, Alice knows that Bob trusts Charlie, and since Alice trusts Bob, she now trusts Charlie via the transitive property. In the real world, to sign a public key one must import it to their key ring, open the interactive menu for that specific key, and run the following command:
 ```console
-sign
+$ sign
 ```
 Key signing can also be done quickly from the CLI with the following command:
 ```console

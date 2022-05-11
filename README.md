@@ -94,14 +94,19 @@ $ gpg --armor --sign [file]
 # FAQ
 This section is dedicated to addressing common issues related to GPG encountered by new users. If you feel that your question deserves to be included in the FAQ of this document, you are invited to email the author of this document.
 * How do I run multiple cryptographic operations on a single file?
+
 Multiple GPG commands can be condensed into one line by appending multiple options after the call to GPG. This has been done before in examples that include the options “armor” and “sign” but can be expanded to include options such as “encrypt”.
 * I am trying to import a private key but am receiving the error message, “no space left on device”. What does this mean?
+
 When you created your virtual machine, you allotted a specific amount of disk space for that machine to occupy on your host machine. When that space is consumed, your virtual machine will prevent any additional files being imported onto the disk. Run the command “df -h/” to reveal how much disk space is being used. If it is at 100% use, consider either expanding your disk space from the host machine’s settings menu for that virtual machine or creating a new virtual machine with more disk space for future use.
 * Why won’t GPG accept my image file in the interactive menu?
+
 This could be one of two issues. Firstly, experienced users of GPG recommend adding photos no larger than 400 x 400 pixels, otherwise you may cause GPG to crash. Additionally, GPG uses an internal tool called “xloadimage” to import photos, but the program assumes that most OS’s have this tool preinstalled, so it is not included on its dependency list during installation. Your virtual machine might not have this tool preinstalled, so try manually installing it by running the command `sudo apt install xloadimage` and then try to add the image once more.
 * When I run commands with the `--armor` option, I receive the error message `usage: gpg [options] --encrypt [filename]`. What does this mean?
+
 When using the `--armor` option, be sure to append that specific option immediately after the call to GPG, then include your additional options like `-sign`, `--encrypt`, and `--recipient`. Flags like `--armor` are syntactically expected before options in GPG.
 * I have imported the public key of a partner who has signed my own key, but after I imported that key, I received the error `# signatures not checked due to missing keys`. What does this mean?
+
 Your partner likely had their public key signed by some number of other users who have not signed your key/whose public keys are not in your keyring. You do not need to immediately remediate this error since it will not prevent you from importing the first public key, but you are invited to reach out to those users and expand your web of trust by signing and importing their key.
 
 # Conclusion

@@ -12,7 +12,7 @@
 
 * *Pretty Good Privacy* (PGP)[^1] is an encryption program that provides end-to-end encryption for the encryption, decryption, and digital signing of emails, files, and more
 
-![Phil Zimmerman](/img/phil-zimmerman.jpg)
+<img src="/content/img/phil-zimmerman.jpg" alt="drawing" width="400"/>
 
 * Phil Zimmerman[^2], the creator of PGP, released the software in June 1991
     * Zimmerman was a politically active individual, and developed PGP with the goal of it being used as a human rights tool in USA[^3][^4]

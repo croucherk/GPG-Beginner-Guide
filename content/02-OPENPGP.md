@@ -103,7 +103,7 @@
 > *Note*
 > The plaintext message is usually compressed prior to encryption, and when it is decrypted it is subsequently decompressed
 
-![Confidentiality via Encryption Diagram](/content/img/encryption-draft.png)
+![Confidentiality via Encryption Diagram](/content/img/encryption-diagram.png)
 <br />
 
 * There are two objects Charlie can attempt to crack: the encrypted file and the encrypted session key
@@ -133,7 +133,7 @@
 > *Note*
 > If the message were encrypted **and** signed, then the encryption would happen immediately after step 4, and decryption would happen immediately before step 6
 
-![Authenticity via Signatures Diagram](/content/img/signature-draft.png)
+![Authenticity via Signatures Diagram](/content/img/signature-diagram.png)
 <br />
 
 * Assuming Charlie has access to an unencrypted copy of the message and signature, then Charlie can attempt two attacks: modifying the original message and/or replacing the signature

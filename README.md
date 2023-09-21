@@ -29,7 +29,7 @@
 ## Conclusion
 
 * I hope that you find this reference document useful
-* I know this guide is not perfect, and I intend to continue working on it until it is perfect, but I am proud of what I have produced so far and how much I have learned from it
+* This guide is in constant development, and any suggestions or requests are appreciated
 * Good luck, and happy hacking!
 
 [^1]:(https://gnupg.org/)
